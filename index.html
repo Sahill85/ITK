@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/484d1ff7e0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#"><img src="images/logoo.png" alt=""></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="ContactUs/contact.html">Contact Us</a></li>
+                    <li><a href="#contact">Our Team</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="ham" onclick="openmenu()"></i>
+            </nav>
+            <div class="headtext">
+                <h1>Bring Force of <br>Artificial Intelligence <br>To Business</h1>
+                <p>A step towards the Future</p>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------- About us  --------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/aboutt.jpg" alt="img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Us</h1>
+                    <p id="topp">At Ingenious Tech Key, we are a leading provider of automation and advanced
+                        technological
+                        solutions. With our expertise and passion for innovation, we specialize in delivering customized
+                        robotic solutions that revolutionize industries and transform the way we work and live.
+                    </p>
+                    <p>Our team of skilled professionals is dedicated to creating cutting-edge automation solutions
+                        tailored to the unique needs of our clients. From designing and building customized robots to
+                        setting up state-of-the-art robotic labs, we offer a comprehensive range of services that enable
+                        organizations to harness the power of automation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============our services===================  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Our Services</h1>
+        </div>
+        <div class="services-list">
+            <div>
+                <img src="images/auto.jpg" alt="img">
+                <h2>Automation Works</h2>
+                <p>We offer end-to-end process automation solutions that eliminate manual interventions, reduce errors,
+                    and accelerate task completion. Our team works closely with startups to identify bottlenecks and
+                    design custom automation workflows that streamline operations across various departments such as
+                    finance, human resources, customer support, and more.</p>
+                
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="images/lab.jpg" alt="img">
+                <h2>Robotic Lab setup</h2>
+                <p> Our lab is equipped with the latest robotic hardware, including robotic arms, sensors, actuators,
+                    and mobility platforms.We have set up a robust software infrastructure to support a wide range of
+                    robotics applications.We are committed to nurturing the next generation of robotics professionals.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="images/works.jpg" alt="img">
+                <h2>Workshops</h2>
+                <p>We provide a comprehensive suite of software and programming tools to support the development and
+                    programming of robotic systems.We strictly adhere to safety protocols, including risk
+                    assessments, safety training, and guidelines for handling robots and potentially hazardous
+                    situations. </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="images/seminar.png" alt="img">
+                <h2>Seminars</h2>
+                <p> Our seminars feature renowned experts from the automation industry who have extensive knowledge and
+                    experience.Automation is a rapidly evolving field, and staying updated with the latest trends and
+                    technologies is crucial. Our seminars provide a platform to explore emerging trends, cutting-edge
+                    technologies, and innovative solutions in automation.</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ==================== footer ====================-->
+    <footer>
+        <div class="footer">
+            <div class="detail">
+                <h1>ITK</h1>
+                <p>Ingenious Tech Key</p>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook" id="fb"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" id="ins"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin" id="lin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube" id="you"></i></a>
+                </div>
+            </div>
+            <div class="links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Our Services</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Product</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>+91-9828014877</p>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@itk.com</p>
+                <p><i class="fa-sharp fa-solid fa-location-dot"></i>iStart Nest, near Polytechnic college, Ratanada,
+                    Jodhpur, Rajasthan</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Ingenious Tech Key, All rights reserved.</p>
+            <div class="up"><a href="#header"><i class="fa-solid fa-chevron-up"></i></a></div>
+        </div>
+    </footer>
+
+
+    <!-------------------- javascipt for hamburger  ---------------------->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

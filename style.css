@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;600&family=Poppins&family=Roboto&family=Roboto+Mono:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(14, 35, 67);
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    width: 100%;
+    height: 900px;
+    background: black;
+    background-image: url(images/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    padding:2px 0px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: rgb(7, 17, 32);
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+nav a img{
+    height: 80px;
+    width: 150px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'MuseoModerno', cursive;
+    position: relative;
+    font-weight: bold;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(229, 127, 26);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav .fa-solid{
+    display: none;
+}
+/* #app a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+} */
+
+.headtext {
+    margin-top: 10%;
+    margin-left: 8%;
+    font-size: 30px;
+    float: left;
+    text-align: left;
+}
+
+.headtext h1 {
+    font-size: 50px;
+    margin-top: 5px;
+    font-family: 'MuseoModerno', cursive;
+}
+.headtext p{
+    font-family: 'Playfair', serif;
+    color: rgb(229, 127, 26);
+}
+
+/* ===================about====================  */
+#about {
+    padding: 80px 0px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.about-col-1 {
+    flex-basis: 30%;
+    margin-left: 100px;
+    box-shadow: 10px 10px 7px rgb(3, 13, 27);
+    border-radius: 15px;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2 {
+    flex-basis: 60%;
+}
+.about-col-2 p{
+    text-align:left;
+    margin: 25px;
+    font-size: 1.25rem;
+}
+.about-col-2 #topp{
+    margin-top: 50px;
+}
+.subtitle {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+}
+
+/* =================Our services=============  */
+
+#services {
+    padding: 30px 150px;
+}
+.sub-title{
+    font-size: 45px;
+    font-family: 'Roboto Mono', monospace;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 60px;
+    margin: 60px 0;
+    color: rgb(0, 0, 0);
+    
+}
+
+.services-list div{
+    background: #fff;
+    height: 500px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background .2s, transform 0.2s;
+}
+.container{
+    text-align: center;
+}
+.services-list div img{
+    height: 210px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div a {
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 8px;
+    display: inline-block;
+    margin-left: 88px;
+}
+.services-list div h2{
+    text-align: center;
+}
+.services-list div p{
+    text-align: left;
+    margin-top: 9px;
+    margin-left: 12px;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+}
+.services-list div a:hover{
+    color: rgb(255, 196, 0);
+}
+
+.services-list div:hover {
+    transform: scale(1.05);
+    transition: 0.8s;
+}
+
+
+
+/*================== footer ===================*/
+footer{
+    background-color: rgb(7, 17, 32);
+    width: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: url(images\footer-sideshape.png);
+}
+.detail{
+    padding: 30px 0px;
+    padding-left: 80px;
+    width: 33.3%;
+}
+.links{
+    padding: 30px 0px;
+    padding-left: 80px;
+    width: 33.3%;
+}
+.links h2{
+    margin-bottom: 25px;
+}
+.links>ul>li{
+    list-style: none;
+    margin: 5px 0;
+}
+.links>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+.links>ul>li>a i{
+    padding-right: 10px;
+}
+.links>ul>li>a:hover{
+    color: rgb(49, 122, 231);
+}
+.contact{
+    padding: 30px 50px;
+    width: 33.3%;
+}
+.contact h2{
+    margin-bottom: 25px;
+}
+.contact p{
+    margin: 10px 0;
+}
+.contact p i{
+    margin-right: 10px;
+}
+.social{
+    margin: 20px 0;
+}
+.social a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+.social a i{
+    transition: transform 0.7s;
+}
+.social a:hover i{
+    transform: scale(1.4);
+    
+}
+
+#ins{
+    margin: 0 15px;
+}
+.social a:hover #fb{
+    color: blue;
+}
+.social a:hover #lin{
+    color: #0A66C2;
+}
+.social a:hover #ins{
+    color: rgb(235, 0, 94);
+}
+.social a:hover #you{
+    color: red;
+}
+#you{
+    margin-left: 15px;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    height: auto;
+    /* text-align: center; */
+    color: rgb(86, 86, 86);
+    border-top: 1px rgb(90, 89, 89) solid;
+    margin: 0 30px;
+}
+.copyright div{
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+.copyright div>a i{
+    padding: 7px;
+}
+.copyright div:hover{
+    background-color: rgb(115, 168, 249);
+    transform: translateY(-8px);
+}
+
+
+/* ================css for small screens=============== */
+
+@media only screen and (max-width:600px){
+    #header{
+        background-image:url(Images/bg33.jpg) ;
+        height: 100vh;
+    }
+    .headtext{
+        margin-top: 35%;
+        font-size: 18px;
+        /* float: left; */
+    }
+    .headtext h1{
+        font-size: 20px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #000000;
+        position:fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 3;
+        transition: right 0.5s;
+        opacity: 0.9;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position:absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .footer{
+        display: block;
+    }
+    .detail{
+        width: 100%;
+    }
+    .contact{
+        width: 100%;
+        padding-left: 80px;
+    }
+    .links{
+        width: 100%;
+    }
+    .copyright>p{
+        font-size: 10px;
+        text-align: center;
+    }
+    #services {
+        padding: 30px 20px;
+    }
+    .about-col-1 {
+        flex-basis: 80%;
+        margin-left: 40px;
+    }
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+    .subtitle {
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+        margin-top: 50px;  
+    }
+    .about-col-2 p{
+        text-align:left;
+        margin: 25px;
+        font-size: 1.1rem;
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+
+
+
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        grid-gap: 20px;
+        
+    }
+    
+    .services-list div{
+        background: #fff;
+        height: 500px;
+        font-size: 3px;
+        font-weight: 300;
+        border-radius: 10px;
+        transition: background .2s, transform 0.2s;
+    }
+    .container{
+        text-align: center;
+    }
+    .services-list div img{
+        height: 200px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .services-list div a {
+        text-decoration: none;
+        font-size: 12px;
+        /* margin-top: 8px; */
+        display: inline-block;
+        /* margin-left: 88px; */
+    }
+    .services-list div h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    .services-list div p{
+        text-align: left;
+        font-size: 13px;
+    }
+}
