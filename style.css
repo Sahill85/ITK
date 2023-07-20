@@ -36,8 +36,9 @@ nav {
     flex-wrap: wrap;
 }
 nav a img{
-    height: 80px;
-    width: 150px;
+    height: 70px;
+    width: auto;
+    padding: 10px 0px;
 
 }
 
