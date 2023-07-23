@@ -37,7 +37,11 @@ nav {
 }
 nav a img{
     height: 70px;
+<<<<<<< HEAD
     width: 180px;
+=======
+    width: 190px;
+>>>>>>> 78b7782496cc5d9153e6d22cb5317951e757a4a8
     padding: 10px 0px;
 
 }
