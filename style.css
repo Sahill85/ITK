@@ -37,7 +37,7 @@ nav {
 }
 nav a img{
     height: 70px;
-    width: auto;
+    width: 180px;
     padding: 10px 0px;
 
 }
@@ -75,12 +75,7 @@ nav ul li a:hover::after {
 nav .fa-solid{
     display: none;
 }
-/* #app a{
-    font-size: 30px;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Roboto Mono', monospace;
-} */
+
 
 .headtext {
     margin-top: 10%;
@@ -161,7 +156,7 @@ nav .fa-solid{
 
 .services-list div{
     background: #fff;
-    height: 500px;
+    height: 490px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
@@ -171,7 +166,7 @@ nav .fa-solid{
     text-align: center;
 }
 .services-list div img{
-    height: 210px;
+    height: 180px;
     width: 100%;
     border-radius: 10px;
 }
@@ -179,13 +174,6 @@ nav .fa-solid{
 .services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
-}
-.services-list div a {
-    text-decoration: none;
-    font-size: 12px;
-    margin-top: 8px;
-    display: inline-block;
-    margin-left: 88px;
 }
 .services-list div h2{
     text-align: center;
@@ -206,6 +194,110 @@ nav .fa-solid{
     transition: 0.8s;
 }
 
+/* style for learn more  */
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 2.5rem;
+    height: 2rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.35rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   button.learn-more .button-text a{
+    color: #282936;
+    text-decoration: none;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text a {
+    color: #ffffff;
+   }
+   #fi{
+    margin-top: 25px;
+   }
+   #se{
+    margin-top: 25px;
+   }
+   #th{
+    margin-top: 43px;
+   }
+   #fo{
+    margin-top: 10px;
+   }
 
 
 /*================== footer ===================*/
