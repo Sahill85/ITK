@@ -26,7 +26,6 @@ body {
 }
 
 nav {
-    padding:10px 0px;
     width: 100%;
     display: flex;
     position: fixed;
@@ -35,7 +34,12 @@ nav {
     justify-content: space-around;
     flex-wrap: wrap; 
 }
+nav a img{
+    height: 70px;
+    width: 190px;
+    padding: 5px 0px;
 
+}
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -68,12 +72,6 @@ nav ul li a:hover::after {
 
 nav .fa-solid{
     display: none;
-}
-#app a{
-    font-size: 30px;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Roboto Mono', monospace;
 }
 
 .headtext {
