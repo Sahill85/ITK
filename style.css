@@ -530,7 +530,7 @@ footer{
         padding-top: 50px;
         z-index: 3;
         transition: right 0.5s;
-        opacity: 0.9;
+        opacity: 1;
     }
     nav ul li{
         display: block;
