@@ -521,7 +521,7 @@ footer{
         
     }
     nav ul{
-        background: #000000;
+        background: rgb(7, 17, 32);
         position:fixed;
         top: 0;
         right: -200px;
