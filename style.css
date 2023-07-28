@@ -644,12 +644,4 @@ footer{
         text-align: left;
         font-size: 13px;
     }
-    .work-list {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(50px, 1fr));
-        grid-gap: 50px;
-        margin: 50px 50px;
-        width: 50px;
-    }
-    
 }
