@@ -14,165 +14,270 @@
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <a href="#"><img src="logo.png" alt=""></a>
-                <ul id="sidemenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <!-- <li><a href="#">Product</a></li> -->
-                    <li><a href="#services">Our Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="#ourr">Our Team</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" id="ham" onclick="openmenu()"></i>
-            </nav>
-            <div class="headtext">
-                <h1>Bring Force of <br>Artificial Intelligence <br>To Business</h1>
-                <p>A step towards the Future</p>
-            </div>
-        </div>
-    </div>
+    <header>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <a href="#"><img src="logo.png" alt=""></a>
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#sec">Our Services</a></li>
+                        <li><a href="#ourr">Our Courses</a></li>
+                        <li><a href="/ContactUs/contact.html">Contact Us</a></li>
 
-    <!--------------------- About us  --------------------------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="aboutt.jpg" alt="img">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Us</h1>
-                    <p id="topp">At Ingenious Tech Key, we are a leading provider of automation and advanced
-                        technological
-                        solutions. With our expertise and passion for innovation, we specialize in delivering customized
-                        robotic solutions that revolutionize industries and transform the way we work and live.
-                    </p>
-                    <p>Our team of skilled professionals is dedicated to creating cutting-edge automation solutions
-                        tailored to the unique needs of our clients. From designing and building customized robots to
-                        setting up state-of-the-art robotic labs, we offer a comprehensive range of services that enable
-                        organizations to harness the power of automation.
-                    </p>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" id="ham" onclick="openmenu()"></i>
+                </nav>
+                <div class="headtext">
+                    <h1>Bring Force of <br><span>Robotics</span> To Business</h1>
+                    <div class="ui">
+                        <p>A step towards the Future</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- =============our services===================  -->
-    <div id="services" style="border-top: 1px solid white;">
-        <div class="container">
-            <h1 class="sub-title">Our Services</h1>
+    <!-- ===================About us=================== -->
+    <section>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1 poll">
+                        <img src="/images/aboutt.jpg" alt="img">
+                    </div>
+                    <div class="about-col-2 roll">
+                        <div class="subh">
+                            <h1 class="subtitlee">About Us</h1>
+                        </div>
+                        <p id="topp">At Ingenious Tech Key, we are a leading provider of automation and advanced
+                            technological
+                            solutions. With our expertise and passion for innovation, we specialize in delivering
+                            customized
+                            robotic solutions that revolutionize industries and transform the way we work and live.
+                        </p>
+                        <p>Our team of skilled professionals is dedicated to creating cutting-edge automation solutions
+                            tailored to the unique needs of our clients. From designing and building customized robots
+                            to
+                            setting up state-of-the-art robotic labs, we offer a comprehensive range of services that
+                            enable
+                            organizations to harness the power of automation.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="services-list">
-            <div>
-                <img src="images/auto.jpg" alt="img">
-                <h2>Automation Works</h2>
-                <p>We offer end-to-end process automation solutions that eliminate manual interventions, reduce errors,
-                    and accelerate task completion. Our team works closely with startups to identify bottlenecks and
-                    design custom automation workflows that streamline operations across various departments such as
-                    finance, human resources, customer support, and more.</p>
+    </section>
+    <!-- ===================our services===================  -->
+    <section id="sec">
+        <div id="services">
+            <div class="contain">
+                <h1 class="servicetitle">Services</h1>
+            </div>
+            <div class="services-list">
+                <a href="Services/services.html#rls">
+                    <div class="poll">
+                        <img src="images/lab.jpg" alt="img">
+                        <h2>Robotic Lab setup</h2>
+                        <p> Our lab is equipped with the latest robotic hardware, including robotic arms, sensors,
+                            actuators, and mobility platforms.
+                        </p>
+                    </div>
+                </a>
+                <a href="Services/services.html#workshop">
+                    <div class="reveal">
+                        <img src="images/works.jpg" alt="img">
+                        <h2>Workshops</h2>
+                        <p>We provide a comprehensive suite of software and programming tools to support the development
+                            and
+                            programming of robotic systems.</p>
+                    </div>
+                </a>
+                <a href="Services/services.html#seminar">
+                    <div class="roll">
+                        <img src="images/seminar.png" alt="img">
+                        <h2>Seminars</h2>
+                        <p> Our seminars feature renowned experts from the automation industry who have extensive
+                            knowledge and experience.</p>
+                    </div>
+                </a>
+            </div>
 
-                <button class="learn-more" id="fi">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text"><a href="#">Learn more...</a></span>
-                </button>
-            </div>
-            <div>
-                <img src="images/lab.jpg" alt="img">
-                <h2>Robotic Lab setup</h2>
-                <p> Our lab is equipped with the latest robotic hardware, including robotic arms, sensors, actuators,
-                    and mobility platforms.We have set up a robust software infrastructure to support a wide range of
-                    robotics applications.We are committed to nurturing the next generation of robotics professionals.
-                </p>
-                <button class="learn-more" id="se">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text"><a href="#">Learn more...</a></span>
-                </button>
-            </div>
-            <div>
-                <img src="images/works.jpg" alt="img">
-                <h2>Workshops</h2>
-                <p>We provide a comprehensive suite of software and programming tools to support the development and
-                    programming of robotic systems.We strictly adhere to safety protocols, including risk
-                    assessments, safety training, and guidelines for handling robots and potentially hazardous
-                    situations. </p>
-                <button class="learn-more" id="th">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text"><a href="#">Learn more...</a></span>
-                </button>
-            </div>
-            <div>
-                <img src="images/seminar.png" alt="img">
-                <h2>Seminars</h2>
-                <p> Our seminars feature renowned experts from the automation industry who have extensive knowledge and
-                    experience.Automation is a rapidly evolving field, and staying updated with the latest trends and
-                    technologies is crucial. Our seminars provide a platform to explore emerging trends, cutting-edge
-                    technologies, and innovative solutions in automation.</p>
-                <button class="learn-more" id="fo">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text"><a href="#">Learn more...</a></span>
-                </button>
-            </div>
-        </div>
-    </div>
-    </div>
+            <!-- ===================Business Verticals=================== -->
+            <div id="aboutt">
 
-    <!-- =============Our Team===================  -->
-    <section class="teamm" id="ourr">
-    <div class="container">
-        <h1 class="sub-title" style="margin-top: 70px;margin-bottom: 20px;">Our Team</h1>
-    </div>
-    <div class="container-3">
-        <h2>We work together to deliver on new technologies in the field of Robotics. <br>
-            We have a very stable team who have worked together. We know each others strengths and use them to deliver
-            better results. </h2>
-    </div>
-    <div class="work-list">
-        <div class="work">
-            <img src="narayan.jpg" alt="img">
-            <div class="layer">
-                <h2>Narayan Jangid</h2>
-                <p>Founder of INGENIOUS TECH KEY</p>
-                <a href="https://www.linkedin.com/in/narayan-jangid-549857166/"><i class="fa-brands fa-linkedin" id="lin"></i></a>
+                <div class="roww">
+                    <div class="aboutt-col-1 poll">
+                        <img src="images/business.png" alt="">
+                    </div>
+                    <div class="aboutt-col-2 roll">
+                        <div class="bu">
+                            <h1 class="subtitle">Business Verticals</h1>
+                        </div>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skill Centre</p>
+                            <p class="tab-links" onclick="opentab('education')">R&amp;D Innovation</p>
+                            <p class="tab-links" onclick="opentab('experience')">Product Developement</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <p>Empowering individuals with robotics skills through classes,
+                                labs, workshops, and seminars.
+                            </p>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <p>Fostering creativity and innovation within our robotics labs and
+                                centers, driving cutting-edge research.
+
+                            </p>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <p>Transforming innovative ideas into market-ready
+                                products to fuel the growth of the robotics and automation
+                                industry in India.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- ===================Our Courses===================  -->
+
+    <section class="team" id="ourr">
+        <div class="contain">
+            <h1 class="sub-title">Our Courses</h1>
+        </div>
+        <div class="container-3 reveal">
+            <h2 style="margin-top:25px;text-transform: uppercase;">10 weeks to your robotic future</h2>
+        </div>
+        <div class="workk-list reveal">
+            <div class="workk">
+                <img src="/images/robotic building.jpg" alt="img">
+                <div class="layerr">
+                    <h2>Mastery in Robotics</h2>
+                    <!-- <p><a href="itk courses.jpg">Get Details</a></p> -->
+                    <p><a target="_blank" rel="noopener" href="/Courses/robotics_course.html">Get Details</a></p>
+                </div>
+            </div>
+            <div class="workk" style="opacity: 0.5;">
+                <img src="/images/pcb.jpg" alt="img">
+                <div class="layerr">
+                    <h2>Electronic PCB &amp; design</h2>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+            <div class="workk" style="opacity: 0.5;">
+                <img src="/images/programming.jpg" alt="img">
+                <div class="layerr">
+                    <h2>Programming</h2>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+            <div class="workk" style="opacity: 0.5;">
+                <img src="/images/3d.jpg" alt="img">
+                <div class="layerr">
+                    <h2>CAD design &amp; 3D Printing</h2>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+            <div class="workk" style="opacity: 0.5;">
+                <img src="/images/app dev.png" alt="img">
+                <div class="layerr">
+                    <h2>App development for Robots</h2>
+                    <p>Coming Soon</p>
+                </div>
             </div>
         </div>
-        <div class="work">
-            <img src="aniket.jpg" alt="img">
-            <div class="layer">
-                <h2>Aniket Singh</h2>
-                <p>Team Member</p>
-                <a href="https://www.linkedin.com/in/aniket-singh-183738214/"><i class="fa-brands fa-linkedin" id="lin"></i></a>
+        <button id="broucher"><a href="itk courses.jpg" download="">Download Details</a><i
+                class="fa-solid fa-download"></i></button>
+        </div>
+    </section>
+
+    <!-- ===================Our Team===================  -->
+    <section class="teamm" id="our">
+        <div class="containerr">
+            <h1 class="sub-title" style="margin-top: 20px;margin-bottom: 20px;">Our Team</h1>
+        </div>
+        <div class="container-3">
+            <h2>We work together to deliver on new technologies in the field of Robotics.
+                We have a very stable team who have worked together. We know each others strengths and use them to
+                deliver
+                better results. </h2>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="team photos/Sir.jpg" alt="img">
+                <div class="layer">
+                    <h2>Narayan Jangid</h2>
+                    <p>Founder of ITK</p>
+                    <!-- <a href=""><i class="fa-brands fa-linkedin" id="lin"></i></a> -->
+                </div>
+            </div>
+            <div class="work ">
+                <img src="team photos/Divya.jpg" alt="img">
+                <div class="layer">
+                    <h2>Divya</h2>
+                    <p>Team Member</p>
+                    <!-- <a href=""><i class="fa-brands fa-linkedin" id="lin"></i></a> -->
+                </div>
+            </div>
+            <div class="work ">
+                <img src="team photos/Khushboo Mundel.jpg" alt="img">
+                <div class="layer">
+                    <h2>Khushboo Mundel</h2>
+                    <p>Team Member</p>
+                    <!-- <a href=""><i class="fa-brands fa-linkedin" id="lin"></i></a> -->
+                </div>
+            </div>
+            <div class="work ">
+                <img src="team photos/Mahesh.jpg" alt="img">
+                <div class="layer">
+                    <h2>Mahesh</h2>
+                    <p>Team Member</p>
+                    <!-- <a href=""><i class="fa-brands fa-linkedin" id="lin"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="team photos/Mayank.jpg" alt="img">
+                <div class="layer">
+                    <h2>Mayank</h2>
+                    <p>Team Member</p>
+                    <!-- <a href=""><i class="fa-brands fa-linkedin" id="lin"></i></a> -->
+                </div>
+            </div>
+            <div class="work ">
+                <img src="team photos/Nikhil Sharma.jpg" alt="img">
+                <div class="layer">
+                    <h2>Nikhil Sharma</h2>
+                    <p>Team Member</p>
+                    <!-- <a href=""><i class="fa-brands fa-linkedin" id="lin"></i></a> -->
+                </div>
+            </div>
+            <div class="work ">
+                <img src="team photos/Shivendar.jpg" alt="img">
+                <div class="layer">
+                    <h2>Shivendar</h2>
+                    <p>Team Member</p>
+                    <!-- <a href=""><i class="fa-brands fa-linkedin" id="lin"></i></a> -->
+                </div>
+            </div>
+            <div class="work ">
+                <img src="team photos/dp.jpg" alt="img">
+                <div class="layer">
+                    <h2>Sahil</h2>
+                    <p>Team Member</p>
+                    <!-- <a href=""><i class="fa-brands fa-linkedin" id="lin"></i></a> -->
+                </div>
             </div>
         </div>
-        <div class="work">
-            <img src="t4.jpg" alt="img">
-            <div class="layer">
-                <h2>Kratika</h2>
-                <p>Team Member</p>
-                <a href="https://www.linkedin.com/in/kratika-pancholy-712275210/"><i class="fa-brands fa-linkedin" id="lin"></i></a>
-            </div>
         </div>
-        <div class="work">
-            <img src="sahil.jpg" alt="img">
-            <div class="layer">
-                <h2>Sahil</h2>
-                <p>Team Member</p>
-                <a href="https://www.linkedin.com/in/mohammad-sahil-731309248/"><i class="fa-brands fa-linkedin" id="lin"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
+    </section>
+
     <!-- ==================== footer ====================-->
     <footer>
         <div class="footer">
@@ -180,10 +285,12 @@
                 <h1>ITK</h1>
                 <p>Ingenious Tech Key</p>
                 <div class="social">
-                    <a href="#"><i class="fa-brands fa-facebook" id="fb"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram" id="ins"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin" id="lin"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube" id="you"></i></a>
+                    <a href="https://instagram.com/ingenious_tech_key_?igshid=NTc4MTIwNjQ2YQ=="><i
+                            class="fa-brands fa-instagram" id="ins"></i></a>
+                    <a href="https://www.linkedin.com/in/narayan-jangid-549857166/?originalSubdomain=in"><i
+                            class="fa-brands fa-linkedin" id="lin"></i></a>
+                    <a href="https://www.youtube.com/@robonari/featured"><i class="fa-brands fa-youtube"
+                            id="you"></i></a>
                 </div>
             </div>
             <div class="links">
@@ -192,14 +299,14 @@
                     <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
                     <li><a href="#about"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
                     <li><a href="#services"><i class="fa-solid fa-chevron-right"></i>Our Services</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Product</a></li>
-                    <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
+                    <li><a href="ContactUs/contact.html"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
                 </ul>
             </div>
             <div class="contact">
                 <h2>Contact Us</h2>
-                <p><i class="fa-sharp fa-solid fa-phone"></i>+91-9828014877</p>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@itk.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>+91-8875461792</p>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i><a
+                        href="mailto:contact@ingenioustechkey.com">contact@ingenioustechkey.com</a></p>
                 <p><i class="fa-sharp fa-solid fa-location-dot"></i>iStart Nest, near Polytechnic college, Ratanada,
                     Jodhpur, Rajasthan</p>
             </div>
@@ -211,7 +318,7 @@
     </footer>
 
 
-    <!-------------------- javascipt for hamburger  ---------------------->
+    <!-- =================== javascipt for hamburger=================== -->
     <script>
         var sidemenu = document.getElementById("sidemenu");
 
@@ -220,6 +327,89 @@
         }
         function closemenu() {
             sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <!--===================script for reveal===================  -->
+    <script>
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+    <!-- ===================javascipt for Business Verticals===================  -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+<!-- ===================javascipt for animation=================== -->
+    <script>
+        window.addEventListener('scroll', roll);
+
+        function roll() {
+            var rolls = document.querySelectorAll('.roll');
+
+            for (var i = 0; i < rolls.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = rolls[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    rolls[i].classList.add('active');
+                }
+                else {
+                    rolls[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+    <script>
+        window.addEventListener('scroll', poll);
+
+        function poll() {
+            var polls = document.querySelectorAll('.poll');
+
+            for (var i = 0; i < polls.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = polls[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    polls[i].classList.add('active');
+                }
+                else {
+                    polls[i].classList.remove('active');
+                }
+            }
         }
     </script>
 

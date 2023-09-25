@@ -12,33 +12,31 @@
 
 <body>
     <div id="header">
-        <div class="container">
+        
             <nav>
                 <!-- <h1 id="app"><a href="#">ITK</a></h1> -->
                 <a href="#"><img src="logo.png" alt="logo"></a>
                 <ul id="sidemenu">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/index.html#about">About Us</a></li>
-                    <!-- <li><a href="/index.html">Product</a></li> -->
                     <li><a href="/index.html#services">Our Services</a></li>
+                    <li><a href="/index.html#ourr">Our Courses</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="/index.html#contact">Our Team</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" id="ham" onclick="openmenu()"></i>
             </nav>
-            <div class="headtext">
+            <!-- <div class="headtext">
                 <h1>Bring Force of <br>Artificial Intelligence <br>To Business</h1>
                 <p>A step towards the Future</p>
-            </div>
-        </div>
+            </div> -->
     </div>
 
 
     <!-- ========================contact==============  -->
     <section>
         <div id="contact">
-            <h1>Send Us Message</h1>
+            <h1 style="margin-top: 20px;">Send Us Message</h1>
             <div class="containerr">
                 <div class="contact-left">
                     <div class="a">
@@ -50,48 +48,51 @@
                     <div class="p">
                         <i class="fa-sharp fa-solid fa-phone"></i>
                         <h2>Call Us</h2>
-                        <p>+91-9828014877</p>
+                        <p>+91-8875461792</p>
                     </div>
                     <div class="g">
                         <i class="fa-sharp fa-solid fa-paper-plane"></i>
                         <h2>Email Us</h2>
-                        <p>itk@gmail.com</p>
+                        <p>contact@ingenioustechkey.com</p>
                     </div>
-                    <div class="o">
+                    <!-- <div class="o">
                         <i class="fa-regular fa-clock"></i>
                         <h2>Open Hours</h2>
                         <p>Monday - Saturday</p>
                         <p>9:00AM - 05:00PM</p>
-                    </div>
+                    </div> -->
                 </div>
+
                 <div class="contact-right">
-                    <!--    contact form-->
-
-
+                    <!--    contact form   -->
                     <div id="contact">
-
-
                         <div class="container">
 
-                            <form id="form" action="connect.php" method="post">
+                            <form id="form" name="submit-to-google-sheet">
 
-                                <h3 class="sub-title" style="color: #fff;">Contact Details</h3>
+                                <h3 class="sub-title">Registration Form</h3>
 
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="your name"
+                                <label for="name"></label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Student Name"
                                     required />
-                                <label for="email">Email</label>
+                                <label for="email"></label>
                                 <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="your email" />
-                                <label for="number">Number</label>
+                                    placeholder="Student Email" />
+                                <label for="number"></label>
                                 <input type="text" class="form-control" id="phone number" name="number"
-                                    placeholder="your number" />
-                                <label for="domain">Domain</label>
-                                <input type="text" class="form-control" id="domain" name="domain"
-                                    placeholder="your domin" required />
-                                <label for="message">Message</label>
+                                    placeholder="Student Mobile Number" />
+                                <!-- <label for="courses"></label>
+                                <select id="courses">
+                                    <option value="none">-- select course --</option>
+                                    <option value="robotic">Robotic Building</option>
+                                    <option value="electronic">Electronics & PCB Design</option>
+                                    <option value="programming">Programming</option>
+                                    <option value="cad">Audi</option>
+                                    <option value="app">Audi</option>
+                                </select> -->
+                                <label for="message"></label>
                                 <textarea id="message" class="form-control" rows="4" name="message"
-                                    placeholder="ask query!!"></textarea>
+                                    placeholder="Enter Your Query"></textarea>
                                 <button>
                                     <div class="svg-wrapper-1">
                                         <div class="svg-wrapper">
@@ -104,10 +105,12 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <span>Send</span>
+                                    <span>SUBMIT</span>
                                 </button>
+                                <span id="msg"></span>
 
                             </form>
+                            
 
                         </div>
                     </div>
@@ -125,10 +128,9 @@
                 <h1>ITK</h1>
                 <p>Ingenious Tech Key</p>
                 <div class="social">
-                    <a href="#"><i class="fa-brands fa-facebook" id="fb"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram" id="ins"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin" id="lin"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube" id="you"></i></a>
+                    <a href="https://instagram.com/ingenious_tech_key_?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram" id="ins"></i></a>
+                    <a href="https://www.linkedin.com/in/narayan-jangid-549857166/?originalSubdomain=in"><i class="fa-brands fa-linkedin" id="lin"></i></a>
+                    <a href="https://www.youtube.com/@robonari/featured"><i class="fa-brands fa-youtube" id="you"></i></a>
                 </div>
             </div>
             <div class="links">
@@ -137,13 +139,14 @@
                     <li><a href="/index.html"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
                     <li><a href="/index.html#about"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
                     <li><a href="/index.html#services"><i class="fa-solid fa-chevron-right"></i>Our Services</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Product</a></li>
+                    <li><a href="/index.html#ourr"><i class="fa-solid fa-chevron-right"></i>Our Courses</a></li>
                 </ul>
             </div>
             <div class="contact">
                 <h2>Contact Us</h2>
-                <p><i class="fa-sharp fa-solid fa-phone"></i>+91-9828014877</p>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>itk@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>+91-8875461792</p>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i><a
+                        href="mailto:contact@ingenioustechkey.com">contact@ingenioustechkey.com</a></p>
                 <p><i class="fa-sharp fa-solid fa-location-dot"></i>iStart Nest, near Polytechnic college, Ratanada,
                     Jodhpur, Rajasthan</p>
             </div>
@@ -166,6 +169,26 @@
             sidemenu.style.right = "-200px";
         }
     </script>
+
+    <!-- google sheet form  -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxUC_W6LIRoVX1JkwqeSw0aU-5oHiubIKFbrqcTMCFZV1utXn7hCo2gwEWeYe3nxdo55A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "'Message Sent Succesfully'"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },4000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 
 </html>
